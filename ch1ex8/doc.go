@@ -4,7 +4,7 @@
 /*
 # Init go mod file
 
-	go mod init ch1ex8
+	$ go mod init ch1ex8
 
 # Unit tests
 

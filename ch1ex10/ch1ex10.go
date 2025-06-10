@@ -13,8 +13,8 @@ func FetchAll(urls []string) (*os.File, error) {
 
 	start := time.Now()
 	ch := make(chan string)
-	for i, url := range urls {
-		go fetch(url, ch, i) // start a goroutine
+	for _, url := range urls {
+		go fetch(url, ch) // start a goroutine
 	}
 	for range urls {
 		out += <-ch // receive from channel ch
@@ -38,7 +38,7 @@ func FetchAll(urls []string) (*os.File, error) {
 	return f, nil
 }
 
-func fetch(url string, ch chan<- string, index int) {
+func fetch(url string, ch chan<- string) {
 	start := time.Now()
 	resp, err := http.Get(url)
 	if err != nil {

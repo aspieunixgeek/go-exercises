@@ -1,0 +1,22 @@
+0.532s   89385 https://docs.docker.com
+0.546s   89385 https://docs.docker.com
+0.562s   50356 https://duckduckgo.com
+0.626s    8832 https://www.dw.com
+0.671s  287199 https://github.com
+0.687s  497415 https://www.bbc.com
+0.862s  622574 https://youtube.com
+0.909s  364054 https://stackoverflow.com
+1.063s      23 https://yahoo.com
+1.065s   91331 https://wikipedia.org
+1.079s   57265 https://roblox.com
+1.123s    6591 https://amazon.com
+1.143s     931 https://aliexpress.com
+1.184s  645641 https://www.reddit.com
+1.254s  271179 https://whatsapp.com
+1.254s  390888 https://zoom.us
+1.492s  208471 https://office.com
+3.283s  701200 https://live.com
+3.437s  531206 https://samsung.com
+8.004s Get "https://notwork.com": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+8.004s Get "https://ubuntu.com": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+8.004s elapsed

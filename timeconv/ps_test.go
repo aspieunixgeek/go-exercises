@@ -30,11 +30,11 @@ func Test_PsToMs(t *testing.T) {
 }
 
 // picosecond tp microsecond
-func Test_PsToMicSec(t *testing.T) {
+func Test_PsToMicroSec(t *testing.T) {
 	r := rand.Float64()
 
 	correct := MicroSec(r / 1e+6) // r / 1 000 000
-	needCheck := PsToMicSec(PicoSec(r))
+	needCheck := PsToMicroSec(PicoSec(r))
 
 	if needCheck != correct {
 		t.Errorf("needCheck(%v) Not Equal correct(%v)", needCheck, correct)

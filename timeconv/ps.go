@@ -8,7 +8,7 @@ func PsToNs(ps PicoSec) NanoSec {
 }
 
 // picosecond to microsecond
-func PsToMicSec(ps PicoSec) MicroSec {
+func PsToMicroSec(ps PicoSec) MicroSec {
 	return MicroSec(ps / 1e+6) // ps / 1 000 000 (million)
 }
 

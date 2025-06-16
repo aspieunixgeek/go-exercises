@@ -2,7 +2,7 @@
 
 package timeconv
 
-// Picosecond to Nanosecond
+// picosecond to nanosecond
 func PsToNs(ps PicoSec) NanoSec {
 	return NanoSec(ps / 1000)
 }

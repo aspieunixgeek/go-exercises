@@ -40,3 +40,15 @@ func Test_NsToMicroSec(t *testing.T) {
 		t.Errorf("needCheck(%v) Not Equal correct(%v)", needCheck, correct)
 	}
 }
+
+// nanosecond to picosecond
+func Test_NsToPs(t *testing.T) {
+	r := rand.Float64()
+
+	correct := PicoSec(r * 1000)
+	needCheck := NsToPs(NanoSec(r))
+
+	if needCheck != correct {
+		t.Errorf("needCheck(%v) Not Equal correct(%v)", needCheck, correct)
+	}
+}

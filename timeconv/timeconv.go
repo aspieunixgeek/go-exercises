@@ -11,21 +11,21 @@ type MilliSec float64
 type Sec float64
 
 func (ps PicoSec) String() string {
-	return fmt.Sprintf("%.3f ps", ps)
+	return fmt.Sprintf("%.12f ps", ps)
 }
 
 func (ns NanoSec) String() string {
-	return fmt.Sprintf("%.3f ns", ns)
+	return fmt.Sprintf("%.12f ns", ns)
 }
 
 func (us MicroSec) String() string {
-	return fmt.Sprintf("%.3f μs", us)
+	return fmt.Sprintf("%.12f μs", us)
 }
 
 func (ms MilliSec) String() string {
-	return fmt.Sprintf("%.3f ms", ms)
+	return fmt.Sprintf("%.12f ms", ms)
 }
 
 func (s Sec) String() string {
-	return fmt.Sprintf("%.3f s", s)
+	return fmt.Sprintf("%.12f s", s)
 }

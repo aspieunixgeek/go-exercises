@@ -15,6 +15,7 @@ func Test_MsToSec(t *testing.T) {
 	if needCheck != correct {
 		t.Errorf("needCheck(%v) Not Equal correct(%v)", needCheck, correct)
 	}
+	t.Logf("needCheck(%v), correct(%v)", needCheck, correct)
 }
 
 // millisecond to nanosecond
@@ -27,6 +28,7 @@ func Test_MsToNs(t *testing.T) {
 	if needCheck != correct {
 		t.Errorf("needCheck(%v) Not Equal correct(%v)", needCheck, correct)
 	}
+	t.Logf("needCheck(%s), correct(%s)", needCheck, correct)
 }
 
 // millisecond to micro-second
@@ -39,4 +41,5 @@ func Test_MsToMicroSec(t *testing.T) {
 	if needCheck != correct {
 		t.Errorf("needCheck(%v) Not Equal correct(%v)", needCheck, correct)
 	}
+	t.Logf("needCheck(%s), correct(%s)", needCheck, correct)
 }

@@ -14,6 +14,7 @@ func Test_MicroSecToNanoSec(t *testing.T) {
 	if needCheck != correct {
 		t.Errorf("needCheck(%v) Not Equal correct(%v)", needCheck, correct)
 	}
+	t.Logf("needCheck(%v), correct(%v)", needCheck, correct)
 }
 
 func Test_MicroSecToMs(t *testing.T) {
@@ -25,6 +26,7 @@ func Test_MicroSecToMs(t *testing.T) {
 	if needCheck != correct {
 		t.Errorf("needCheck(%v) Not Equal correct(%v)", needCheck, correct)
 	}
+	t.Logf("needCheck(%v), correct(%v)", needCheck, correct)
 }
 
 func Test_MicroSecToSec(t *testing.T) {
@@ -36,4 +38,5 @@ func Test_MicroSecToSec(t *testing.T) {
 	if needCheck != correct {
 		t.Errorf("needCheck(%v) Not Equal correct(%v)", needCheck, correct)
 	}
+	t.Logf("needCheck(%v), correct(%v)", needCheck, correct)
 }

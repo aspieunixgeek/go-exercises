@@ -15,7 +15,6 @@ func Test_PsToNs(t *testing.T) {
 	if needCheck != correct {
 		t.Errorf("needCheck(%v) Not Equal correct(%v)", needCheck, correct)
 	}
-	t.Logf("needCheck(%v), correct(%v)", needCheck, correct)
 }
 
 // picosecond tp millisecond
@@ -28,7 +27,6 @@ func Test_PsToMs(t *testing.T) {
 	if needCheck != correct {
 		t.Errorf("needCheck(%v) Not Equal correct(%v)", needCheck, correct)
 	}
-	t.Logf("needCheck(%v), correct(%v)", needCheck, correct)
 }
 
 // picosecond tp microsecond
@@ -41,7 +39,6 @@ func Test_PsToMicroSec(t *testing.T) {
 	if needCheck != correct {
 		t.Errorf("needCheck(%v) Not Equal correct(%v)", needCheck, correct)
 	}
-	t.Logf("needCheck(%v), correct(%v)", needCheck, correct)
 }
 
 // picosecond tp second
@@ -54,5 +51,4 @@ func Test_PsToSec(t *testing.T) {
 	if needCheck != correct {
 		t.Errorf("needCheck(%v) Not Equal correct(%v)", needCheck, correct)
 	}
-	t.Logf("needCheck(%v), correct(%v)", needCheck, correct)
 }

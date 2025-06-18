@@ -17,7 +17,6 @@ func NsToToMicroSec(ns NanoSec) MicroSec {
 	return MicroSec(ns / 1000)
 }
 
-// nanosecond to picosecond
 func NsToPs(ns NanoSec) PicoSec {
 	return PicoSec(ns * 1000)
 }

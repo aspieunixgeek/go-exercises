@@ -15,6 +15,6 @@ func Test_CompareBitsCount(t *testing.T) {
 		t.Errorf("PopCountNew(%d) Not Equal PopCountOld(%d)\n", cntNew, cntOld)
 	}
 
-	t.Logf("PopCountNew: bin(%[1]b), dec(%[1]d)\n", cntNew, cntNew)
+	t.Logf("PopCountNew: bin(%[1]b), dec(%[1]d)\n", cntNew)
 	t.Logf("PopCountOld: bin(%[1]b), dec(%[1]d)\n", cntOld)
 }

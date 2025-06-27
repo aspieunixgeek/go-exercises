@@ -5,9 +5,9 @@ import (
 	"testing"
 )
 
-func Test_CompareBitsCount(t *testing.T) {
-	var x = rand.Uint64()
+var x = rand.Uint64()
 
+func Test_CompareBitsCount(t *testing.T) {
 	cntNew := PopCountNew(x)
 	cntOld := PopCountOld(x)
 
@@ -17,4 +17,16 @@ func Test_CompareBitsCount(t *testing.T) {
 
 	t.Logf("PopCountNew: bin(%[1]b), dec(%[1]d)\n", cntNew)
 	t.Logf("PopCountOld: bin(%[1]b), dec(%[1]d)\n", cntOld)
+}
+
+func BenchmarkOld(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		PopCountOld(x)
+	}
+}
+
+func BenchmarkNew(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		PopCountNew(x)
+	}
 }
